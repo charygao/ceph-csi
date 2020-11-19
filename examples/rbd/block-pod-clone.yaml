@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-with-raw-block-volume
+  name: pod-with-block-volume-clone
 spec:
   containers:
     - name: centos
@@ -14,4 +14,4 @@ spec:
   volumes:
     - name: data
       persistentVolumeClaim:
-        claimName: raw-block-pvc
+        claimName: block-pvc-clone
